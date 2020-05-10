@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="hcs12_int" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="../bin/hcs12_int" prefix_auto="1" extension_auto="1" />
+				<Option object_output="../obj/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="../prj/Flash\ 9s12DT256.bin ../prj/Eeprom\ 9s12DT256.bin" />
+				<Compiler>
+					<Add option="-fPIC" />
+					<Add option="-g" />
+					<Add directory="../src" />
+					<Add directory="/usr/include/qt5" />
+				</Compiler>
+				<Linker>
+					<Add option="-lQt5Core" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="../src/cpu/can_cpp.inl" />
+		<Unit filename="../src/cpu/can_hpp.inl" />
+		<Unit filename="../src/cpu/core.cpp" />
+		<Unit filename="../src/cpu/core.hpp" />
+		<Unit filename="../src/cpu/crg_cpp.inl" />
+		<Unit filename="../src/cpu/crg_hpp.inl" />
+		<Unit filename="../src/cpu/ect_cpp.inl" />
+		<Unit filename="../src/cpu/ect_hpp.inl" />
+		<Unit filename="../src/cpu/interrupt.cpp" />
+		<Unit filename="../src/cpu/interrupt.hpp" />
+		<Unit filename="../src/cpu/mebi_cpp.inl" />
+		<Unit filename="../src/cpu/mebi_hpp.inl" />
+		<Unit filename="../src/cpu/mmc_cpp.inl" />
+		<Unit filename="../src/cpu/mmc_hpp.inl" />
+		<Unit filename="../src/cpu/pim_cpp.inl" />
+		<Unit filename="../src/cpu/pim_hpp.inl" />
+		<Unit filename="../src/cpu/spi_cpp.inl" />
+		<Unit filename="../src/cpu/spi_hpp.inl" />
+		<Unit filename="../src/main.cpp" />
+		<Unit filename="../src/mcu.cpp" />
+		<Unit filename="../src/mcu.hpp" />
+		<Unit filename="../src/mcu_def.hpp" />
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>
